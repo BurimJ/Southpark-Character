@@ -1,6 +1,6 @@
 {
   "name": "Donald Trump",
-  "nickname": "Trump",
+  "nickname": "Unknown",
   "image": "https://static.wikia.nocookie.net/southpark/images/7/72/Trump.png/revision/latest?cb=20201015170856",
   "occupation": "Businessman",
   "age": 50,
@@ -10,7 +10,7 @@
   "catchPhrase": "Make America Great Again,",
   "hairColor": "Brown/Blonde",
   "schoolGrade": null,
-  "episodes": "s05e11 and s19e02",
+  "episodes": "S05E11, S19E02",
   "appearances": 2,
   "firstAppearence": "S05E11"
 }
