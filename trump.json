@@ -1,9 +1,9 @@
 {
-  "name": "Donald",
+  "name": "Donald Trump",
   "nickname": "Trump",
   "image": "https://static.wikia.nocookie.net/southpark/images/7/72/Trump.png/revision/latest?cb=20201015170856",
   "occupation": "Businessman",
-  "age": "50",
+  "age": 50,
   "voicedBy": "Trey Parker",
   "gender": "Male",
   "religion": "Presbyterian",
@@ -11,6 +11,6 @@
   "hairColor": "Brown/Blonde",
   "schoolGrade": null,
   "episodes": "s05e11 and s19e02",
-  "appearances": "2",
+  "appearances": 2,
   "firstAppearence": "S05E11"
 }
