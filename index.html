@@ -4,26 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <title>South Park</title>
   </head>
   <body>
-       <header>
-        <h1>South Park</h1>
+    <header>
+      <h1>South Park Characters</h1>
     </header>
-     <main>
-    <div id="president">
-       <section id="characters" class="grid-container">
-          <section id="characters" class="grid-container">
-            <article><img src="trump.png">
-                <h2>Donalt Trump</h2>
-                <p>OG</p>
-                <p>Date of Birth: 31-07-1980</p>
-            </article>
-        </section>
-        </section>
 
+    <div id="character"></div>
 
+    <dialog>
+      <div id="dialog-character">
+        <div id="column1">
+          <p>
+            Name: <br />
+            <span id="dialog-name"></span>
+          </p>
+          <p>
+            Nickname: <br />
+            <span id="dialog-nickName"></span>
+          </p>
+          <p>
+            Occupation: <br />
+            <span id="dialog-occupation"></span>
+          </p>
+          <p>
+            Age: <br />
+            <span id="dialog-age"></span>
+          </p>
+          <p>
+            Voiced by: <br />
+            <span id="dialog-voicedBy"></span>
+          </p>
+          <p>
+            Gender: <br />
+            <span id="dialog-gender"></span>
+          </p>
+          <p>
+            Religion: <br />
+            <span id="dialog-religion"></span>
+          </p>
+        </div>
+        <div id="column2">
+          <p>
+            Catchphrase: <br />
+            <span id="dialog-catchPhrase"></span>
+          </p>
+          <p>
+            Hair color: <br />
+            <span id="dialog-hairColor"></span>
+          </p>
+          <p>
+            School grade: <br />
+            <span id="dialog-schoolGrade"></span>
+          </p>
+          <p>
+            Episodes: <br />
+            <span id="dialog-episodes"></span>
+          </p>
+          <p>
+            Appearances: <br />
+            <span id="dialog-appearances"></span>
+          </p>
+          <p>
+            First appearance: <br />
+            <span id="dialog-firstAppearance"></span>
+          </p>
+        </div>
+        <div id="column3">
+          <img id="dialog-image" />
+        </div>
+      </div>
+      <form method="dialog">
+        <button id="closing">Close</button>
+      </form>
+    </dialog>
     <script src="script.js"></script>
   </body>
 </html>

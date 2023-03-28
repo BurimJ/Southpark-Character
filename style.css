@@ -1,133 +1,114 @@
-:root {
-  --antiflash-white: rgb(236, 238, 238);
-  --castleton-green-opague: rgba(4, 95, 68, 0.8);
-  --castleton-green: rgb(4, 95, 68);
-  --sea-green: rgb(2, 132, 64);
-  --cambridge-blue: rgb(141, 170, 145);
-}
-
-/* ========== General styling ========== */
-html {
-  height: 100%;
-  width: 100%;
-}
-body {
-  margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-image: url(data/images/background.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-/* ========== Header styling ========== */
-header {
-  display: inline;
-  position: fixed;
-  width: 100%;
-  background-color: var(--castleton-green);
-  text-align: center;
-  color: white;
-}
-
-/* ========== Main section styling ========== */
-main {
-  padding-top: 100px;
-}
-#characters article {
-  padding: 1em;
-  display: block;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px 2px rgb(45, 42, 42);
-  background-color: var(--antiflash-white);
-  height: auto;
-}
-#characters article img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  overflow: clip;
-  overflow-clip-margin: content-box;
-}
-
-/* ========== Dialog styling ========== */
-dialog {
-  width: 75vw;
-  background-image: url(data/images/dialog-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: var(--antiflash-white);
-  border: 3px solid var(--castleton-green);
-}
-dialog img {
-  width: 100%;
-}
-dialog article {
-  background-color: var(--castleton-green-opague);
-  width: 60vw;
-  padding: 1em;
-  margin: auto;
-}
-#dialog-quote {
-  font-style: italic;
-}
-figure {
-  width: 100%;
-  margin: 0;
-}
-figure img {
-  width: 100%;
-}
-#dialog-info {
-  grid-column: 2/2;
-}
-form {
-  margin: 2em;
-  text-align: center;
-}
-form button {
-  background-color: var(--sea-green);
-  color: var(--antiflash-white);
-  border: 1px solid var(--antiflash-white);
-  height: 2.5em;
-  width: 2.5em;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-/* ========== Footer styling ========== */
-footer {
-  background-color: white;
-  color: var(--sea-green);
-  text-align: center;
-}
-
-/* ========== Grid styling ========== */
-.grid-container {
+#character {
+  margin-top: 70px;
   display: grid;
-  grid-template-columns: 1fr;
-  padding: 1em;
-  gap: 2em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
-#dialog-grid {
+
+#character div {
+  border-radius: 5px;
+}
+
+#dialog-character {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#column1 {
+  grid-column: 1;
+}
+
+#column2 {
+  grid-column: 2;
+}
+
+#column3 {
+  grid-column: 3;
+  justify-self: center;
+}
+
+p {
+  font-weight: bolder;
+  font-size: larger;
   text-align: left;
 }
-@media (min-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr;
-  }
+
+p span {
+  font-weight: 10;
+  font-size: smaller;
 }
-@media (min-width: 900px) {
-  .grid-container {
+
+@media (max-width: 1600px) {
+  #character {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media (min-width: 1200px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+@media (max-width: 1400px) {
+  #character {
+    grid-template-columns: 1fr 1fr;
   }
+}
+@media (max-width: 800px) {
+  #character {
+    grid-template-columns: 1fr;
+  }
+}
+
+#character div {
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: rgba(110, 159, 127, 0.871);
+}
+
+footer {
+  margin-top: 10px;
+}
+
+dialog {
+  width: 70vw;
+  background-color: #5b7992;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.348);
+}
+
+#character img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+}
+
+dialog img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+}
+
+form {
+  text-align: center;
+}
+
+form button {
+  width: 15vw;
+  height: 5vh;
+  background-color: rgb(86, 178, 147);
+}
+
+body {
+  background-color: #5b7992;
+  background-size: contain;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5b7992;
+  height: 60px;
 }

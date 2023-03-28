@@ -1,7 +1,7 @@
 {
   "name": "Donald Trump",
-  "nickname": "Unknown",
-  "image": "https://static.wikia.nocookie.net/southpark/images/7/72/Trump.png/revision/latest?cb=20201015170856",
+  "nickname": null,
+  "image": "http://southparkstudios.mtvnimages.com/shared/characters/celebrities/us-politics-donald-trump.png?height=165",
   "occupation": "Businessman",
   "age": 50,
   "voicedBy": "Trey Parker",
@@ -10,7 +10,7 @@
   "catchPhrase": "Make America Great Again,",
   "hairColor": "Brown/Blonde",
   "schoolGrade": null,
-  "episodes": "S05E11, S19E02",
-  "appearances": 2,
+  "episodes": "S05E11, S19E02, S21E10",
+  "appearances": 3,
   "firstAppearence": "S05E11"
 }
