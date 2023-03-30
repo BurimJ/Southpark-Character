@@ -9,7 +9,7 @@ async function start() {
 
 async function getAllCharacters() {
   const response = await fetch(
-    "https://raw.githubusercontent.com/cederdorff/dat-js/main/05-data/southpark.json"
+    "https://cederdorff.github.io/dat-js/05-data/southpark.json"
   );
   const data = await response.json();
   return data;
@@ -76,26 +76,4 @@ const president = {
   firstAppearence: "S05E11",
 };
 console.log(president);
-
-function showCharacter(president) {
-  document.querySelector("#name").textContent = president.name;
-  document.querySelector("#lastName").textContent = president.lastName;
-  document.querySelector("#occupation").textContent = president.occupation;
-  document.querySelector("#age").textContent = president.age;
-  document.querySelector("#hairColor").textContent = president.hairColor;
-  document.querySelector("#occupation").textContent = president.occupation;
-  document.querySelector("#religion").textContent = president.religion;
-  document.querySelector("#gender").textContent = president.gender;
-  document.querySelector("#firstAppearence").textContent =
-    president.firstAppearence;
-}
-
-showCharacter(president);
-
-function showAllCharacters(data) {
-  for (const obj of data) {
-    showCharacter(obj);
-  }
-}
-function showCharacter(obj) {
-  const myHTML = /*html*/
+*/
